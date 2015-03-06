@@ -1,0 +1,84 @@
+html {
+  box-sizing: border-box;
+}
+
+
+*, *::before, *::after {
+  box-sizing: inherit;
+}
+
+header{
+  background-color: #2b3951;
+  padding-top: 3em;
+  margin: 0;
+}
+
+h1{
+  background-color: black;
+  color: white;
+  margin: 0;
+  text-align: center;
+  font-family: 'Contrail One', cursive;
+}
+
+.body{
+  width: 320px;
+  margin: 0;
+  left: 0;
+  bottom: 0;
+  position: relative;
+  display: block;
+
+
+}
+
+.brain{
+  width: 46px;
+  position: absolute;
+  top: 1em;
+  left: 8.5em;
+  overflow: hidden;
+  transition: all 200ms linear;
+
+}
+
+.left{
+  width: 125px;
+  position: absolute;
+  margin: 0;
+  bottom: 3.5em;
+  left: 2.25em;
+  transition: all 200ms linear;
+}
+
+.right{
+  width: 125px;
+  position: absolute;
+  margin: 0;
+  bottom: 3.5em;
+  left: 9.90em;
+  transition: all 200ms linear;
+
+}
+
+div{
+  position: relative;
+  width: 320px;
+  margin: 0 auto;
+}
+
+div:hover .left{
+  bottom: 3.5em;
+  left: 1em;
+}
+
+div:hover .right{
+  bottom: 3.5em;
+  left: 11em;
+
+}
+
+div:hover .brain{
+  top: 0em;
+  left: 8.5em;
+}
